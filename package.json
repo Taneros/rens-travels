@@ -1,8 +1,19 @@
 {
-  "name": "rens-travels",
+  "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "7.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-watch": "^5.0.1",
+    "postcss": "8.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^5.0.1",
+    "postcss-simple-vars": "^6.0.1"
   }
 }
