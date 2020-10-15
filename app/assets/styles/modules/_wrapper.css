@@ -1,7 +1,33 @@
 .wrapper {
+    /* background-color: teal; */
+    overflow: hidden;
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 900px;
+    max-width: 936px;
     margin-left: auto;
     margin-right: auto;
+
+    &--medium {
+        max-width: 900px;
+    }
+
+    /* applied to inner wrapper elements */
+    .wrapper {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+    }
+    /* atSmall screens */
+    @media (min-width: 530px) {
+    &--b-margin {
+        margin-bottom: 2rem;
+    }}
+    /* atMedium screens */
+    @media (min-width: 800px) {
+    &--b-margin {
+        margin-bottom: 3.875rem;
+    }}
 }

@@ -7,3 +7,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+* {
+     /* to avoid inbrowser calculated width values be more than 100% */
+     box-sizing: border-box;
+}
+
+a {
+    color: $mainOrange;
+}
