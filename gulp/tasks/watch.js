@@ -11,7 +11,7 @@ gulp.task('cssInject', () => {
 gulp.task('watch', function () {
     watch('./app/assets/styles/**/*.css', gulp.series('styles', 'cssInject'))
     watch('./app/index.html', () => browserSync.reload())
-    // watch('./app/index.html', gulp.series('html'))
+    watch('./app/assets/scripts/**/*.js', gulp.series('scripts', () => browserSync.reload()))
     browserSync.init({
         server: {
             baseDir: "app",
@@ -19,7 +19,3 @@ gulp.task('watch', function () {
         }
     })
 })
-
-// gulp.task('html', function () {
-//     browserSync.reload()
-// })
