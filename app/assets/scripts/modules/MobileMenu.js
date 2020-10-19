@@ -15,7 +15,7 @@ class MobileMenu {
     events() {
         // this.menuIcon.on("click", () => this.toggleMenu())
         this.menuIcon.addEventListener('click', () => this.toggleMenu())
-        console.log(this.menuPressed)
+        // console.log(this.menuPressed)
     }
 
     //Functions
