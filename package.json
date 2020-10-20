@@ -4,6 +4,7 @@
   "main": "rens-travels/node_modules/postcss-mixins/index",
   "typings": "rens-travels/node_modules/postcss-mixins/index",
   "dependencies": {
+    "lazysizes": "^5.2.2",
     "normalize.css": "7.0.0"
   },
   "devDependencies": {

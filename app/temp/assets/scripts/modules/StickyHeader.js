@@ -2,13 +2,11 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class StickyHeader {
     constructor() {
-        this.lazyImages = document.querySelectorAll('.lazyload')
-        this.refreshWaypoints()
         this.siteHeader = document.querySelector('.site-header')
         this.headerTriggerElement = document.querySelector('.large-hero__title')
         this.createHeaderWaypoint()
         this.pageSections = document.querySelectorAll('.page-section') // get all the divs
-        this.headerLinks = document.querySelectorAll('nav a') // get all the a elements
+        this.headerLinks = document.querySelectorAll('.primary-nav a') // get all the a elements
         this.createPageSectionWaypoints()
     }
 
@@ -29,27 +27,14 @@ class StickyHeader {
     // }
 
     // Methods
-
-    refreshWaypoints() {
-        this.lazyImages.forEach(elem => {
-            elem.addEventListener('load', () => {
-                Waypoint.refreshAll()
-            })
-        })
-    }
-
     createHeaderWaypoint() {
         new Waypoint({
             element: this.headerTriggerElement,
             handler: (direction) => {
                 if (direction == "down") {
                     this.siteHeader.classList.add("site-header--dark")
-                    // console.log('header links inside waypoint 0-d', this.siteHeader)
-                    this.headerLinks.forEach(elem => elem.classList.remove("is-current-link")) // remove is-current-link before highlighting next section
                 } else {
                     this.siteHeader.classList.remove("site-header--dark")
-                    // console.log('header links inside waypoint 0-u', this.siteHeader)
-                    this.headerLinks.forEach(elem => elem.classList.remove("is-current-link")) // remove is-current-link before highlighting next section
                 }
             }
         })
@@ -63,7 +48,6 @@ class StickyHeader {
                     if (direction == "down") {
                         let matchingHeaderLink = elem.getAttribute("data-matching-link") // get the 'data-matching-link' Attribute value stored in div
                         this.headerLinks.forEach(elem => elem.classList.remove("is-current-link")) // remove is-current-link before highlighting next section
-                        // console.log('header links inside waypoint 1-d', this.headerLinks)
                         document.querySelector(matchingHeaderLink).classList.add("is-current-link")
                     }
                 },
@@ -75,7 +59,6 @@ class StickyHeader {
                     if (direction == "up") {
                         let matchingHeaderLink = elem.getAttribute("data-matching-link") // get the 'data-matching-link' Attribute value stored in div
                         this.headerLinks.forEach(elem => elem.classList.remove("is-current-link")) // remove is-current-link before highlighting next section
-                        // console.log('header links inside waypoint 1-u', this.headerLinks)
                         document.querySelector(matchingHeaderLink).classList.add("is-current-link")
                     }
                 },

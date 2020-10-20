@@ -1,8 +1,8 @@
 import MobileMenu from './modules/MobileMenu.js'
 import RevealOnScroll from './modules/RevealOnScroll.js'
 import StickyHeader from './modules/StickyHeader.js'
-import Modal from './modules/Modal.js'
 import SmoothScroll from './modules/SmoothScroll.js'
+import Modal from './modules/Modal.js'
 
 let mobileMenu = new MobileMenu()
 // let revealOnScroll = new RevealOnScroll()
