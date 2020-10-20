@@ -11,6 +11,10 @@
         max-width: 1200px;
     }
 
+    &--narrow {
+        max-width: 470px;
+    }
+
     /* applied to inner wrapper elements */
     .wrapper {
         padding-left: 0%;
