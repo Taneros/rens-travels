@@ -5,7 +5,8 @@
   "typings": "rens-travels/node_modules/postcss-mixins/index",
   "dependencies": {
     "lazysizes": "^5.2.2",
-    "normalize.css": "7.0.0"
+    "normalize.css": "7.0.0",
+    "picturefill": "^3.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -14,6 +15,7 @@
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
+    "gulp-modernizr": "^4.0.1",
     "gulp-postcss": "^9.0.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-watch": "^5.0.1",

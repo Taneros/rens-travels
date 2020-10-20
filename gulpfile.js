@@ -2,6 +2,7 @@ require('./gulp/tasks/styles.js')
 require('./gulp/tasks/watch.js')
 require('./gulp/tasks/sprites.js')
 require('./gulp/tasks/scripts.js')
+require('./gulp/tasks/modernizr.js')
 
 // moved to watch.js
 // gulp.task('watch', async function () {
