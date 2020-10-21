@@ -6,7 +6,8 @@
   "dependencies": {
     "lazysizes": "^5.2.2",
     "normalize.css": "7.0.0",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "readable-stream": "^3.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -14,10 +15,17 @@
     "autoprefixer": "^10.0.1",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
     "gulp-modernizr": "^4.0.1",
     "gulp-postcss": "^9.0.0",
+    "gulp-rev": "^9.0.0",
     "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-usemin": "^0.3.30",
     "gulp-watch": "^5.0.1",
     "jquery": "^3.5.1",
     "postcss-hexrgba": "^2.0.1",
@@ -25,6 +33,7 @@
     "postcss-mixins": "^7.0.1",
     "postcss-nested": "^5.0.1",
     "postcss-simple-vars": "^6.0.1",
+    "terser": "^5.3.7",
     "waypoints": "^4.0.1",
     "webpack": "^5.1.3"
   }

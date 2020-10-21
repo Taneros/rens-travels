@@ -1,10 +1,6 @@
-import $ from 'jquery'
-
 class MobileMenu {
     constructor() {
-        // this.menuIcon = $('.site-header__menu-icon')
         this.menuIcon = document.querySelector(".site-header__menu-icon")
-        // this.menuContent = $('.site-header__menu-content')
         this.menuContent = document.querySelector('.site-header__menu-content')
         this.siteHeader = document.querySelector('.site-header')
         this.events()
@@ -13,7 +9,6 @@ class MobileMenu {
 
     //Events
     events() {
-        // this.menuIcon.on("click", () => this.toggleMenu())
         this.menuIcon.addEventListener('click', () => this.toggleMenu())
         // console.log(this.menuPressed)
     }
